@@ -1,0 +1,16 @@
+create table if not exists streaming_response_body(
+client_location_id Integer not null,
+client_location_code Integer null,
+stream varchar(255) null,
+get_bytes varchar(255) null,
+xml_http_request varchar(255) null,
+protocol varchar(255) null,
+content_type varchar(255) null,
+content_length varchar(255) null,
+geo_restriction varchar(255) null,
+protocol_version varchar(255) null,
+cookies varchar(255) null,
+host_info varchar(255) null,
+real_time_logging varchar(255) null,
+log_flow varchar(255) null,
+constraint streaming_response_body_pk primary key(client_location_id));
